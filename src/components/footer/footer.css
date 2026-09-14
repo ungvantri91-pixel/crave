@@ -1,0 +1,30 @@
+.footer {
+    background-color: #1f2937;
+    display: flex;
+    padding: 28px;
+    justify-content: space-between;
+}
+
+.footer .footer-content {
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: "Nunito", "Nunito Placeholder", sans-serif;
+}
+
+.footer .footer-copyright {
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Nunito", "Nunito Placeholder", sans-serif;
+}
+
+.footer .fa-brands {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.footer .fa-brands:hover {
+    cursor: pointer;
+}

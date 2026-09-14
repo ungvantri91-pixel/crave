@@ -1,0 +1,49 @@
+.header .logo {
+    color: #f4511e;
+    font-size: 26px;
+    font-weight: 900;
+    font-family: "Nunito", "Nunito Placeholder", sans-serif;
+    letter-spacing: -1px;
+}
+
+.header .nav .nav-item {
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Nunito";
+}
+
+.header .nav .nav-item:hover {
+    color: #f4511e;
+    cursor: pointer;
+}
+
+.header .header-right .login {
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Nunito";
+}
+
+.header {
+    padding: 16px 28px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.header .nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .header-right *:hover {
+    color: #f4511e;
+    cursor: pointer;
+}
