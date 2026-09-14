@@ -1,0 +1,532 @@
+html,
+body {
+    margin: 0;
+}
+
+.home-page {
+    min-height: 100vh;
+    background: #ffffff;
+    color: #202637;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+}
+
+.home-page *,
+.home-page *::before,
+.home-page *::after {
+    box-sizing: border-box;
+}
+
+.home-page button,
+.home-page input {
+    font: inherit;
+}
+
+.home-wrap {
+    width: min(100%, 1230px);
+    margin: 0 auto;
+    padding: 10px 10px 34px;
+}
+
+.hero {
+    min-height: 405px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+    align-items: center;
+    gap: 50px;
+    padding: 58px 68px;
+    border-radius: 16px;
+    background:
+        radial-gradient(circle at 82% 15%, rgba(255, 255, 255, 0.85), transparent 24%),
+        #fff0e8;
+}
+
+.hero-copy {
+    max-width: 610px;
+}
+
+.eyebrow {
+    margin: 0 0 18px;
+    color: #ff5a2f;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    margin: 0;
+    color: #202637;
+    font-size: clamp(44px, 5.1vw, 62px);
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 0.95;
+}
+
+.hero h1 span {
+    display: block;
+}
+
+.hero-text {
+    max-width: 520px;
+    margin: 24px 0 22px;
+    color: #737987;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.order-search {
+    width: min(100%, 585px);
+    min-height: 47px;
+    display: grid;
+    grid-template-columns: minmax(170px, 1fr) auto auto;
+    align-items: center;
+    overflow: hidden;
+    padding: 5px;
+    border: 1px solid #eceef3;
+    border-radius: 9px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(43, 33, 27, 0.06);
+}
+
+.search-field {
+    min-width: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 0 14px;
+}
+
+.search-field input {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    color: #222839;
+    background: transparent;
+    font-size: 13px;
+}
+
+.search-field input::placeholder {
+    color: #9ca3af;
+    opacity: 1;
+}
+
+.search-icon {
+    width: 15px;
+    height: 15px;
+    flex: 0 0 15px;
+    background: #b9c0cc;
+    -webkit-mask: url("../assets/icons/search.svg") center / contain no-repeat;
+    mask: url("../assets/icons/search.svg") center / contain no-repeat;
+}
+
+.location-pill {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0 14px;
+    border-left: 1px solid #eef0f4;
+    color: #202637;
+    font-size: 12px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.pin-icon {
+    width: 13px;
+    height: 13px;
+    background: #ff5a2f;
+    -webkit-mask: url("../assets/icons/map-pin.svg") center / contain no-repeat;
+    mask: url("../assets/icons/map-pin.svg") center / contain no-repeat;
+}
+
+.order-search button,
+.promo button {
+    border: 0;
+    color: #ffffff;
+    background: #ff5a2f;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+    white-space: nowrap;
+    transition:
+        transform 160ms ease,
+        background-color 160ms ease,
+        box-shadow 160ms ease;
+}
+
+.order-search button {
+    min-height: 36px;
+    padding: 0 19px;
+    border-radius: 8px;
+}
+
+.order-search button:hover,
+.promo button:hover {
+    background: #ea4925;
+    transform: translateY(-1px);
+}
+
+.hero-image {
+    justify-self: end;
+    width: min(100%, 430px);
+    aspect-ratio: 1.28;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(46, 28, 18, 0.1);
+}
+
+.hero-image img,
+.category-card img,
+.food-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-block {
+    margin-top: 50px;
+}
+
+.popular-block {
+    margin-top: 66px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    color: #202637;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 1.1;
+}
+
+.section-heading a {
+    color: #566070;
+    font-size: 11px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.category-card {
+    min-width: 0;
+    text-align: center;
+}
+
+.category-card img {
+    aspect-ratio: 2.1;
+    border: 1px solid #eef0f4;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(32, 38, 55, 0.04);
+}
+
+.category-card h3 {
+    margin: 12px 0 0;
+    color: #202637;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.popular-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 26px;
+}
+
+.food-card {
+    min-width: 0;
+}
+
+.food-card>img {
+    aspect-ratio: 1.45;
+    border: 1px solid #eceef3;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(32, 38, 55, 0.04);
+}
+
+.food-card-body {
+    padding: 12px 0 0;
+}
+
+.food-card h3 {
+    margin: 0 0 7px;
+    color: #202637;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.food-card p {
+    min-height: 32px;
+    margin: 0 0 8px;
+    color: #6f7684;
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+.food-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.food-card strong {
+    color: #ff5a2f;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.food-card button {
+    width: 28px;
+    height: 28px;
+    display: inline-grid;
+    place-items: center;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: #ff5a2f;
+    cursor: pointer;
+}
+
+.save-icon {
+    width: 17px;
+    height: 17px;
+    display: block;
+    background: #ff5a2f;
+    -webkit-mask: url("../assets/icons/heart.svg") center / contain no-repeat;
+    mask: url("../assets/icons/heart.svg") center / contain no-repeat;
+}
+
+.promo {
+    min-height: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    padding: 38px 62px;
+    border-radius: 15px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff5428 0%, #ff6638 100%);
+}
+
+.promo p {
+    margin: 0 0 8px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.promo h2 {
+    margin: 0 0 8px;
+    color: #ffffff;
+    font-size: clamp(28px, 3.3vw, 38px);
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 1;
+}
+
+.promo span {
+    display: block;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.promo button {
+    display: inline-flex;
+    min-height: 43px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 28px;
+    border-radius: 8px;
+    background: #e94b24;
+    box-shadow: 0 12px 24px rgba(146, 35, 9, 0.18);
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 26px;
+    margin-top: 54px;
+}
+
+.benefit-card {
+    min-height: 125px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 14px;
+    align-items: start;
+    padding: 24px;
+    border: 1px solid #eceef3;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 12px 24px rgba(32, 38, 55, 0.035);
+}
+
+.benefit-icon {
+    width: 23px;
+    height: 23px;
+    display: block;
+    background: #ff5a2f;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.benefit-icon-truck {
+    -webkit-mask-image: url("../assets/icons/truck.svg");
+    mask-image: url("../assets/icons/truck.svg");
+}
+
+.benefit-icon-heart {
+    -webkit-mask-image: url("../assets/icons/heart.svg");
+    mask-image: url("../assets/icons/heart.svg");
+}
+
+.benefit-icon-shield {
+    -webkit-mask-image: url("../assets/icons/shield-check.svg");
+    mask-image: url("../assets/icons/shield-check.svg");
+}
+
+.benefit-icon-headset {
+    -webkit-mask-image: url("../assets/icons/headset.svg");
+    mask-image: url("../assets/icons/headset.svg");
+}
+
+.benefit-card h3 {
+    margin: 0 0 8px;
+    color: #202637;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.benefit-card p {
+    margin: 0;
+    color: #707784;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+@media (max-width: 920px) {
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 42px;
+    }
+
+    .hero-image {
+        justify-self: start;
+        width: min(100%, 500px);
+    }
+
+    .category-grid,
+    .popular-grid,
+    .benefit-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 620px) {
+    .home-wrap {
+        padding: 8px 8px 28px;
+    }
+
+    .hero {
+        gap: 28px;
+        min-height: 0;
+        padding: 30px 22px;
+        border-radius: 14px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .order-search {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .search-field {
+        min-height: 40px;
+    }
+
+    .location-pill {
+        justify-content: flex-start;
+        height: 36px;
+        padding: 0 14px;
+        border-left: 0;
+        border-top: 1px solid #eef0f4;
+    }
+
+    .order-search button {
+        min-height: 42px;
+        width: 100%;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+    }
+
+    .category-grid,
+    .popular-grid,
+    .benefit-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .section-block,
+    .popular-block,
+    .promo,
+    .benefit-grid {
+        margin-top: 38px;
+    }
+
+    .promo {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 30px 24px;
+    }
+
+    .promo button {
+        width: 100%;
+    }
+}
