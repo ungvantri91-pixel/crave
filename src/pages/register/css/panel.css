@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+.panel {
+    background-image: url('../assets/images/anh.avif');
+    background-size: cover;
+    width: 35%;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.panel .panel-content {
+    background-color: rgba(31, 41, 55, 0.88);
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 420px;
+    padding: 20px;
+}
+
+.panel .panel-content * {
+    font-family: "Nunito", "Nunito Placeholder", sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: left;
+}
+
+.panel .panel-content .panel-description {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+}

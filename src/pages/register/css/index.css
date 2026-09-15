@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 30px;
+    gap: 40px;  
+}
