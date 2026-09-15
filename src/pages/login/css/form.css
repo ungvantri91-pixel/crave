@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+.form {
+    width: 35%;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #f2e6df;
+    padding: 40px;
+}
+
+.form .title-1 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #f4511e;
+    font-family: "Nunito", "Nunito Placeholder", sans-serif;
+    text-align: left;
+}
+
+.form .title-2 {
+    font-size: 25px;
+    font-weight: 900;
+    font-family: "Nunito", "Nunito Placeholder", sans-serif;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form .title-3 {
+    font-size: 15px;
+    font-family: "Nunito", "Nunito Placeholder", sans-serif;
+    text-align: left;
+}
+
+.form .form-container .form-group label {
+    font-size: 15px;
+    font-family: "Nunito", "Nunito Placeholder", sans-serif;
+    text-align: left;
+    font-weight: 600;
+    display: block;
+}
+
+.form .form-container .form-group input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #f2e6df;
+    background-color: #FFF8F3;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.form .form-container .form-group input:focus {
+    outline: none;
+    border-color: #f4511e;
+}
+
+.form .form-container button {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    font-weight: 900;
+    font-family: "Nunito", "Nunito Placeholder", sans-serif;
+    margin-top: 20px;
+}
+
+.form .form-container .form-group {
+    margin-top: 20px;
+}
+
+.form .footer {
+    font-family: "Nunito", "Nunito Placeholder", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.form .footer:hover {
+    color: #f4511e;
+    cursor: pointer;
+}
+
+.form .form-container button:hover {
+    cursor: pointer;
+}
+
