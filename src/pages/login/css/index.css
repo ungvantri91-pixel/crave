@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .login {
     display: flex;
     justify-content: center;

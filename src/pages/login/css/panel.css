@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .panel {
     background-color: #f4511e;
     width: 35%;
