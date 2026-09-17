@@ -119,8 +119,8 @@ body {
     height: 15px;
     flex: 0 0 15px;
     background: #b9c0cc;
-    -webkit-mask: url("../assets/icons/search.svg") center / contain no-repeat;
-    mask: url("../assets/icons/search.svg") center / contain no-repeat;
+    -webkit-mask: url("../../../assets/icon/search.svg") center / contain no-repeat;
+    mask: url("../../../assets/icon/search.svg") center / contain no-repeat;
 }
 
 .location-pill {
@@ -140,8 +140,8 @@ body {
     width: 13px;
     height: 13px;
     background: #ff5a2f;
-    -webkit-mask: url("../assets/icons/map-pin.svg") center / contain no-repeat;
-    mask: url("../assets/icons/map-pin.svg") center / contain no-repeat;
+    -webkit-mask: url("../../../assets/icon/location.svg") center / contain no-repeat;
+    mask: url("../../../assets/icon/location.svg") center / contain no-repeat;
 }
 
 .order-search button,
@@ -315,8 +315,8 @@ body {
     height: 17px;
     display: block;
     background: #ff5a2f;
-    -webkit-mask: url("../assets/icons/heart.svg") center / contain no-repeat;
-    mask: url("../assets/icons/heart.svg") center / contain no-repeat;
+    -webkit-mask: url("../../../assets/icon/heart.svg") center / contain no-repeat;
+    mask: url("../../../assets/icon/heart.svg") center / contain no-repeat;
 }
 
 .promo {
@@ -402,23 +402,23 @@ body {
 }
 
 .benefit-icon-truck {
-    -webkit-mask-image: url("../assets/icons/truck.svg");
-    mask-image: url("../assets/icons/truck.svg");
+    -webkit-mask-image: url("../../../assets/icon/truck.svg");
+    mask-image: url("../../../assets/icon/truck.svg");
 }
 
 .benefit-icon-heart {
-    -webkit-mask-image: url("../assets/icons/heart.svg");
-    mask-image: url("../assets/icons/heart.svg");
+    -webkit-mask-image: url("../../../assets/icon/heart.svg");
+    mask-image: url("../../../assets/icon/heart.svg");
 }
 
 .benefit-icon-shield {
-    -webkit-mask-image: url("../assets/icons/shield-check.svg");
-    mask-image: url("../assets/icons/shield-check.svg");
+    -webkit-mask-image: url("../../../assets/icon/shield-check.svg");
+    mask-image: url("../../../assets/icon/shield-check.svg");
 }
 
 .benefit-icon-headset {
-    -webkit-mask-image: url("../assets/icons/headset.svg");
-    mask-image: url("../assets/icons/headset.svg");
+    -webkit-mask-image: url("../../../assets/icon/headset.svg");
+    mask-image: url("../../../assets/icon/headset.svg");
 }
 
 .benefit-card h3 {
