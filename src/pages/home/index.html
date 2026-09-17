@@ -11,7 +11,7 @@
 <body>
     <main class="home-page">
         <div class="home-wrap">
-            <section class="hero" aria-label="giới thiệu dịch vụ">
+            <section class="hero" aria-label="Giới thiệu dịch vụ">
                 <div class="hero-copy">
                     <p class="eyebrow">Bữa ăn tiếp theo của bạn</p>
                     <h1>
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="hero-image">
-                    <img src="./assets/images/hero-table.jpg" alt="Bàn tiệc món ngon tươi mới cùng bạn bè" />
+                    <img id="hero-img" alt="Món ngon Crave" />
                 </div>
             </section>
 
@@ -49,28 +49,7 @@
                     <a href="#">Xem tất cả danh mục</a>
                 </div>
 
-                <div class="category-grid">
-                    <article class="category-card">
-                        <img src="./assets/images/category-burgers.jpg" alt="Burger" />
-                        <h3>Burger</h3>
-                    </article>
-                    <article class="category-card">
-                        <img src="./assets/images/category-pizza.jpg" alt="Pizza" />
-                        <h3>Pizza</h3>
-                    </article>
-                    <article class="category-card">
-                        <img src="./assets/images/category-sushi.jpg" alt="Sushi" />
-                        <h3>Sushi</h3>
-                    </article>
-                    <article class="category-card">
-                        <img src="./assets/images/category-noodles.jpg" alt="Mì" />
-                        <h3>Mì sợi</h3>
-                    </article>
-                    <article class="category-card">
-                        <img src="./assets/images/category-desserts.jpg" alt="Món tráng miệng" />
-                        <h3>Tráng miệng</h3>
-                    </article>
-                </div>
+                <div class="category-grid" id="category-grid" aria-live="polite"></div>
             </section>
 
             <section class="section-block popular-block">
@@ -78,63 +57,7 @@
                     <h2>Món ngon gần bạn</h2>
                 </div>
 
-                <div class="popular-grid">
-                    <article class="food-card">
-                        <img src="./assets/images/popular-burger.jpg" alt="Smoky Stack Burger" />
-                        <div class="food-card-body">
-                            <h3>Smoky Stack Burger</h3>
-                            <p>2 lớp bò nướng, phô mai cheddar, sốt đặc trưng</p>
-                            <div class="food-card-footer">
-                                <strong>125.000đ</strong>
-                                <button type="button" aria-label="Lưu Smoky Stack Burger">
-                                    <span class="save-icon" aria-hidden="true"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="food-card">
-                        <img src="./assets/images/popular-bowl.jpg" alt="Garden Power Bowl" />
-                        <div class="food-card-body">
-                            <h3>Garden Power Bowl</h3>
-                            <p>Rau xanh tươi giòn, ngũ cốc, sốt mè chanh</p>
-                            <div class="food-card-footer">
-                                <strong>105.000đ</strong>
-                                <button type="button" aria-label="Lưu Garden Power Bowl">
-                                    <span class="save-icon" aria-hidden="true"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="food-card">
-                        <img src="./assets/images/popular-maki.jpg" alt="Tokyo Maki Set" />
-                        <div class="food-card-body">
-                            <h3>Tokyo Maki Set</h3>
-                            <p>Cuộn maki tươi ngon kèm gừng hồng và wasabi</p>
-                            <div class="food-card-footer">
-                                <strong>165.000đ</strong>
-                                <button type="button" aria-label="Lưu Tokyo Maki Set">
-                                    <span class="save-icon" aria-hidden="true"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="food-card">
-                        <img src="./assets/images/popular-noodles.jpg" alt="Spicy Miso Noodles" />
-                        <div class="food-card-body">
-                            <h3>Spicy Miso Noodles</h3>
-                            <p>Nước dùng miso đậm đà, mè rang, trứng lòng đào</p>
-                            <div class="food-card-footer">
-                                <strong>138.000đ</strong>
-                                <button type="button" aria-label="Lưu Spicy Miso Noodles">
-                                    <span class="save-icon" aria-hidden="true"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+                <div class="popular-grid" id="popular-grid" aria-live="polite"></div>
             </section>
 
             <section class="promo">
@@ -183,6 +106,8 @@
             </section>
         </div>
     </main>
+
+    <script type="module" src="./js/home.js"></script>
 </body>
 
 </html>
